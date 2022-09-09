@@ -1,0 +1,17 @@
+<div class="container">
+    Product Count: {{collection.all_products_count}} </br></br>
+    {% capture tubigg %}
+    <div class="product-wrapper">
+        {% for product in collection.products %}
+            {% render 'product-list-item', product: product %}
+        {% endfor %}
+    </div>
+    {% endcapture %}
+
+    Product Lists: - <h3>{{tubigg}}</h3>
+</div>
+
+<script>
+    let colleection = {{ collection.products | json }};
+    console.log(colleection)
+ </script>
