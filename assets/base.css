@@ -1201,6 +1201,10 @@ summary::-webkit-details-marker {
   overflow: hidden;
 }
 
+.sample {
+  display: none;
+}
+
 .media--transparent {
   background-color: transparent;
 }
